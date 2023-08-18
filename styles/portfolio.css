@@ -1,5 +1,6 @@
 body, html {
     scroll-behavior: smooth;
+    background: #f8f8f8;
 }
 /* 반응형 대비 최소제한 너비 설정 */
 header, main {
@@ -69,7 +70,6 @@ main #home .mouse img {
 /* skill */
 main #skill {
     padding: 50px 43.5px 50px;
-    background: #f8f8f8;
 }
 main #skill h1 {
     font-size: 4.375rem;
@@ -102,7 +102,10 @@ main #skill .container li .content {
 }
 main #profile {
     padding: 143px 244px;
-    background: #f8f8f8;
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 main #profile h1 {}
 main #profile h1 img {}
