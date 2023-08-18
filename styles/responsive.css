@@ -1,0 +1,13 @@
+@keyframes mouse_move {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-50px);}
+}
+@media screen and (max-width:1440px) {
+    main #home h1 img{width: 80%;}
+    main #skill .container {height: 850px;}
+    main #project_web1 .project_bg .project_info .link a {padding: 10px 38px 15px;}
+}/* 1440 end */
+@media screen and (max-width:1300px) {
+    main #skill .container {height: 1000px;}
+    main #project_web1 .project_bg .project_info .link a {padding: 10px 30px 15px;}
+}/* 1300 end */

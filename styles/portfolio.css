@@ -1,0 +1,242 @@
+body, html {
+    scroll-behavior: smooth;
+}
+/* 반응형 대비 최소제한 너비 설정 */
+header, main {
+    min-width: 900px;
+}
+/* header */
+header, #home {background: #032BB9;}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 0 43px 0;
+}
+header nav {
+    padding:0 10px 0;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+header nav .gnb a {padding: 15px 20px 15px;}
+header nav .gnb {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header nav .gnb a,
+header nav .sns span {color: #fff;}
+header nav .gnb a {
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+header nav .gnb a:hover {
+    background: #fff;
+    color: #032BB9;
+}
+header nav .gnb a:last-child {margin-right: 0;}
+header nav .sns {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header nav .sns span {margin-right: 10px;}
+header nav .sns span:last-child {margin-right: 0;}
+/* home */
+main {}
+main #home {
+    height: 100vh;
+    text-align: center;
+    padding: 130px 43px 35px;
+}
+main #home .wrap {
+    border-bottom: 2px solid #fff;
+}
+main #home h1 {}
+main #home h1 img {}
+main #home .mouse {
+    display: inline-block;
+    width: 50px; height: 50px;
+    margin: 150px 0 30px;
+}
+main #home .mouse img {
+    width: 100%;
+    animation: mouse_move 1s linear alternate infinite;
+}
+/* skill */
+main #skill {
+    padding: 50px 43.5px 50px;
+    background: #f8f8f8;
+}
+main #skill h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    color: #032BB9;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #032BB9;
+    text-align: center;
+}
+main #skill .container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 700px;
+    padding: 50px 86.5px 0;
+    align-content: space-between;
+}
+main #skill .container li {
+    width: 48%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 30px 0;
+    border-bottom: 1px dashed #aaa;
+}
+main #skill .container li span {}
+main #skill .container li .icon {width: 90px;}
+main #skill .container li .icon img {}
+main #skill .container li .content {
+    width: calc(100% - 90px);
+    line-height: 30px;
+}
+main #profile {
+    padding: 143px 244px;
+    background: #f8f8f8;
+}
+main #profile h1 {}
+main #profile h1 img {}
+main #profile .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+main #profile .container .photo {margin-right: 100px;}
+main #profile .container .photo img {}
+main #profile .container .info {}
+main #profile .container .info h2 {
+    margin-bottom: 10px;
+}
+main #profile .container .info h2 em {
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
+main #profile .container .info h2 span {
+    color: #aaa;
+}
+main #profile .container .info .tag {}
+main #profile .container .info .tag span {
+    font-size: 1.333rem;
+    font-weight: 700;
+    color: #032BB9;
+    margin-right: 15px;
+}
+main #profile .container .info div {}
+main #profile .container .info div p {
+    font-family: 'Oleo Script', cursive;
+    font-size: 1.333rem;
+    margin: 50px 0 15px;
+}
+main #profile .container .info div dl {
+    display: flex;
+    flex-flow: row wrap;
+}
+main #profile .container .info div dl dt,
+main #profile .container .info div dl dd {
+    margin-bottom: 10px;
+}
+main #profile .container .info div dl dt:last-child,
+main #profile .container .info div dl dd:last-child {
+    margin-bottom: 0;
+}
+main #profile .container .info div dl dt {
+    font-weight: 700;
+    color: #032BB9;
+    width: 51px;
+}
+main #profile .container .info div dl dd {width: calc(100% - 51px);}
+/* project_web1 */
+main #project_web1 {
+    background: url(../images/project1_bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+main #project_web1::after {
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 50;
+}
+main #project_web1 h1 {
+    font-size: 9.375rem;
+    font-family: 'Oleo Script', cursive;
+    padding: 160px 0 50px;
+    position: relative;
+    z-index: 200;
+    color: #fff;
+    text-align: center;
+}
+main #project_web1 .project_bg {
+    background: rgba(255, 255, 255, 0.7);
+    height: 50vh;
+    position: relative;
+    z-index: 200;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main #project_web1 .project_bg .preview {
+    position: relative;
+    z-index: 200;
+    margin-right: 15px;
+    width: 678px;
+}
+main #project_web1 .project_bg .preview img {}
+main #project_web1 .project_bg .project_info {
+    position: relative;
+    z-index: 200;
+    width: 639;
+}
+main #project_web1 .project_bg .project_info .project_content {margin-bottom: 50px;}
+main #project_web1 .project_bg .project_info .project_content p {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+}
+main #project_web1 .project_bg .project_info .project_content p em {
+    font-size: 1.333rem;
+    font-weight: 700;
+    width: 91px;
+    margin-right: 30px;
+}
+main #project_web1 .project_bg .project_info .project_content p span {
+    font-size: 1.333rem;
+    width: calc(100% - 91px);
+    line-height: 40px;
+    margin-top: -10px;
+}
+main #project_web1 .project_bg .project_info .link {
+    display: flex;
+    justify-content: space-between;
+}
+main #project_web1 .project_bg .project_info .link a {
+    padding: 10px 50px 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.333rem;
+    transition: all 0.1s linear;
+}
+main #project_web1 .project_bg .project_info .link a:hover {
+    background: #FFDB59;
+    color: #fff;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
